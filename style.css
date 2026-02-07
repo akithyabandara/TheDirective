@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*GLOBAL STYLES*/
+body {
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Work Sans', sans-serif;
+    color: #000000;
+    margin: 0;
+    background-color: #000000;
+}
+#article {
+    margin: 1px; padding: 0;
+}
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ffffff;
+    width: 1200px;
+    margin:20px auto;
+  }
+.content {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    color: #ffffff;
+}
+.container {
+    display: flex;
+    font-size: smaller;
+    justify-content: center;
+    padding: 10px;
+}
+.link {
+    text-decoration: none;
+    color:#ffffff;
+}
+.link:hover{
+    text-decoration: underline;
+    color:cornflowerblue;
+}
+.webpagetitle {
+    text-align: center;
+    font-size:4em;
+}
+.articleheader {
+    background: none;
+    height: 96px;
+}
+/*These global styles along wth the imported url are classes that would apply
+the styles throughout the whole webpage. The font style is: Work Sans, that is known to be a font
+that enables website efficiency.*/
+
+/*HEADER*/
+header {
+    background: url(images/techproducts.jpg);
+    height: 520px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+/*The background image turned out to be zoomed a lot without these specifications hence background position,
+repeat, and size was added for proper resolution*/
+}
+header img {
+    position: relative;
+    top: 20px; left: 20px;
+    z-index: 1;
+}
+
+/*NAVIGATION*/
+nav {
+    background-color: rgba(96, 4, 255, 0.48);
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    padding-top: 45px;
+}
+nav ul {
+    text-align: center;
+    list-style: none;
+}
+nav li {
+    display: inline;
+/*Disables the list points of the nav links*/
+}
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px 15px 20px;
+}
+nav a:hover {
+    background-color: #c30010;
+}
+nav span {
+    background-color:#c30010;
+    padding: 10px 20px 15px 20px;
+    color: #ffffff;
+/*Highlights the selected navigation link on each webpage to show the user what segment of the site they are one*/
+}
+
+/*HOMEPAGE*/
+#content {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    color: #ffffff;
+}
+#container p{
+    margin-bottom: 0;
+}
+section {
+    width: 362px; height: 309px;
+}
+h2 {
+    margin-bottom: 0;
+}
+article {
+    padding-top: 30px;
+}
+/*Most of the homepage styles are to organize spacing in-between content*/
+
+/*SIDEBAR*/
+aside {
+    background-color: #c30010;
+    padding: 45px 45px 10px;
+    text-align: center;
+    position: relative;
+    border-radius: 15px;
+    margin: 10px;
+    margin-top: 30px;
+}
+#emailbox {
+    place-self: center;
+    align-self: flex-end;
+    padding-bottom: 0;
+    height: 250px;
+}
+input[type="email"] {
+    width: 100%;
+    padding: 12px 20px; 
+    box-sizing: border-box; 
+    border-radius: 15px;
+    align-self: flex-end;
+}
+/*This covers the email registration that can be seen at the end of every page (excepting the about us page as it contains the contacts)
+To provide contrast the specific color of the background was picked and its size is a design decesion to balance out the content and the footer*/
+
+/*FOOTER*/
+#footer {
+    background-color: #6004ff7a;
+    color:#ffffff;
+    list-style: none;
+    margin-bottom: 0;
+    padding: 45px;
+    text-align: right;
+}
+.align-left-image {
+    float: left;
+/*For the directive logo to appear left unlike the footer content coded to place themselves to the right*/
+}
+#privacydoc{
+    color:#ffffff;
+    text-decoration: none;
+}    
+#privacydoc:hover {
+    text-decoration: underline;
+    color:cornflowerblue;
+}
+/*"privacydoc" enables how the privacy policy document link appears in the footer*/
+
+/*NEWS*/
+#news header {
+    background: url(images/news.jpg);
+    height: 420px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color:#ffffff;
+}
+header p {
+    text-align: center;
+}
+#newsvideo {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 30px;
+    align-content: center;
+}
+#iframe {
+    float: left;
+    margin: 0 auto;
+}
+#latest {
+    margin-bottom: 30px;
+}
+/*For each internally linked webpage a seperate id was needed to create for the header as I wanted to showcase different header background
+images for each webpage*/
+
+/*REVIEWS*/
+#review header {
+    background: url(images/man.jpg);
+    height: 420px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color:#ffffff;
+}
+#review article {
+    color: #ffffff;
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+#videos {
+    display: flex;
+    justify-content: space-between;
+/*justify-content is to arrange the spacing of sections in the flex view, in this case arranging the sections to the farthest widths of the flexbox*/
+}
+#videos section {
+    justify-content: center;
+}
+#reviewcontent {
+    padding-top: 50px;
+}
+
+/*BUYING GUIDE*/
+#guide header {
+    background: url(images/products.jpg);
+    height: 420px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color:#ffffff;
+}
+#guidecontent {
+    color:#ffffff;
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/*ABOUT US*/
+#about header {
+    background: url(images/computer.jpg);
+    height: 320px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color:#ffffff;
+}
+#aboutus {
+    color:#ffffff;
+    place-self: center;
+    text-align: center;
+}
+#aboutus section {
+    height: fit-content;
+/*This is for the sections to arrange the heights according to the amount of content written*/
+}
+#mission {
+    display: flex;
+    place-self: center;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 15px;
+}
+#mission section {
+    height: fit-content;
+}
+#team {
+    display: flex;
+    place-self: center;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 15px;
+    gap: 10px;
+}
+#team section {
+    height: fit-content;
+    width: 340px;
+    padding:20px 1px;
+    background-color: #c30010;
+    border-radius:10px; 
+    color:#000000;
+/*The border radius is used for the aesthetic curvature of the background color/image*/
+}
+#team img {
+    border-radius: 50%;
+/*A 50% border radius creates a circle, a customary look for profile icons*/
+}
+.subheading {
+    color:#ffffff;
+    place-self:center;
+}
+#contactlist {
+    color:#ffffff;
+    place-self: center;
+    padding-top: 0;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 20px;
+}
+#contactlist ul {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    justify-content: center;
+}
+#contactlist a {
+    color:#ffffff;
+    text-decoration: none;
+    padding: 10px;
+}
+#contactlist a:hover {
+    text-decoration: underline;
+    color:cornflowerblue;
+}
+#aboutlocation {
+    align-content: center;
+    justify-content: center;
+    margin-left: 170px;
+    height: 420px;
+}
+#aboutlocation article {
+    padding-top:10px;
+}
+
+/*ARTICLE*/
+#article img {
+    position: relative;
+    top: 20px; left: 20px;
+}
+#articlecontent {
+    color:#ffffff;
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+#articlecontent p {
+    margin-bottom: 20px;
+}
+#smallicon {
+  width: 32px;
+  height: 32px;      
+  border-radius: 50%; 
+/*This is to show the profile pitcure of the author of the article*/
+}
+#reviewprofile {
+    text-align: right;
+}
+#profile {
+    display: flex;
+    height: fit-content;
+}
+#profile p {
+    margin-bottom: 0; margin-top:0;
+    height:fit-content;
+    margin-left: 10px;
+    font-size: small;
+    text-align: left;
+}
+#articlepara {
+    width: 800px;
+    height: 1240px;
+    margin: auto;
+    justify-content: center;
+}
+#articlepara iframe {
+    padding: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#articlepara img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#articlepara p{
+    padding: 10px;
+    line-height: 22px;
+}
+
+/*RECOMMENDATION*/
+.recommendationpara {
+    width: fit-content;
+    display: flex;
+    align-content: center;
+    position: relative;
+    margin: auto;
+    justify-content: center;
+}
+.recommendationpara h3 {
+    margin-bottom: 0;
+}
+.purchaselink {
+    height: fit-content;
+}
+.purchaselink ul {
+    list-style: none;
+    padding-left: 0;
+}
+.purchaselink a {
+  background-color: #6004ff7a;
+  color: #ffffff;
+  padding: 12px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 25px;
+/*This is for a specific link style for the recommendation page to direct the user to the external links*/
+}
+.purchaselink a:hover{
+    background-color:#c30010;
+}
+.purchaselink ul {
+    width: fit-content;
+}
+#recommendationcontent {
+    color:#ffffff;
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 10px;
+    height: fit-content;
+}
+#recommendationcontent section {
+    height:fit-content;
+    width: fit-content;
+    padding:10px;
+}
+
+/*PRODUCT*/
+#rating {
+    display: flex;
+    justify-content:space-evenly;
+    height:870px;
+}
+#rating section {
+    width:409px;
+}

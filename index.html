@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>The Directive</title>
+        <link rel="icon" href="images/iconblack.png" type="image/png"
+              sizes="16x16">  
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <!--A personally designed Icon (intentionally the dark version of the logo as an aesthetic) using Adobe Illustrator-->
+    <!--link to attach the styles of the css sheet-->
+    
+    <body>
+        <header>
+        <a href="index.html"><img src="images/directivelogowhite.png" alt="The Directive Logo"
+             width="180" height="61"></a>
+        </header>
+    <!--A personally designed logo for the website and the tech review company "The Directive" By Adobe Illustrator-->
+    <!--The Logo contains the h1 title hidden within that acts as a link to the homepage throughout the website-->
+        
+        <!--NAVIGATION-->
+        <nav>
+            <ul>
+                <li><a href="news.html" title="Tech News"><b>Tech News</b></a></li>
+                <li><a href="reviews.html" title="Reviews"><b>Reviews</b></a></li>
+                <li><a href="guide.html" title="Buying Guides"><b>Buying Guides</b></a></li>
+                <li><a href="aboutus.html" title="About us"><b>About Us</b></a></li>
+            </ul>
+        </nav>
+    <!--Contains 4 internally linked pages directing the user to various tech related segments covered by the company-->     
+        
+        
+    <main class="content">
+    <!--CONTENT AREA 1 -->
+    <article>
+        <h2><b>Latest Tech News</b></h2>
+        <p>Stay Updated on the Latest Technology News and Trends</p>
+        <!-- Most headings and some paragraphs are written seperated from the div class because most of my content(articles) is intended to be displayed side by sid
+        and I do not want headings or paragraphs within the display flex style that I had to assign to every div class -->
+        
+        <div class= "container">
+        <!--div class not id because there is a repetition in styles for multiple sections-->
+            
+        <section>
+            <img src="images/iphone.jpg" title="iphone 18 Pro:Camera" rel="external"
+                 width="330" height="238">
+            <h3><a href="article.html" target="_blank" class="link">iPhone 18 Pro: Revolutionary Camera System Released</a></h3>
+        <!--This h3 is linked to an example thematic article to show User Interface and Experience-->
+        <!--All links are attached to a class to contain a different style on hover-->
+        <!--Articles are loaded on a new tab for user convenience an an organized navigation hence the "target=_blank"-->
+            <p>1 Hour ago</p>
+        </section>
+            
+        <section>
+            <img src="images/laptop.jpg" title="Dell XPS 15" rel="external"
+                 width="330" height="238">
+            <h3>Dell Announces XPS 15 with 48-Hour Battery Life</h3>
+            <p>2 Days ago</p>
+        </section>
+            
+        <section>
+            <img src="images/sony.jpg" title="Sony WH-2000XM6" rel="external"
+                 width="330" height="238">
+            <h3>Sony WH-2000XM6 Review: The Best Just Got Better</h3>
+            <p>2 Weeks ago</p>
+        </section>
+        </div>
+    </article>   
+    
+    <!--CONTENT AREA 2 -->
+    <article>
+    <h2><b>Buying Guides and Recommendations</b></h2>
+    <p>Expert advice to help you make the right purchase decesions</p>
+        
+    <div class= "container">
+            <section>
+            <img src="images/student.jpg" title="Best Student Laptops 2026" rel="external"
+                 width="330" height="238">
+            <h3><a href="recommendation.html" target="_blank" class="link">Best Laptops for Students in 2026</a></h3>
+            <p>5 Days ago</p>
+        </section>
+            
+        <section>
+            <img src="images/smartphone.jpg" title="Top Smartphones" rel="external"
+                 width="330" height="238">
+            <h3>Top Smartphones Under 5 Lakhs</h3>
+            <p>1 Week ago</p>
+        </section>
+            
+        <section>
+            <img src="images/gaming.jpg" title="Gaming Setup" rel="external"
+                 width="330" height="238">
+            <h3>Affordable Gaming Setup Essentials 2026</h3>
+            <p>2 Weeks ago</p>
+        </section>
+    </div>
+    </article>   
+        
+    <!--CONTENT AREA 3  -->
+    <article>
+    <h2><b>Expert Product Reviews</b></h2>
+    <p>In-depth analysis and ratings from our our Directive Team of tech experts</p>
+    
+    <div class= "container">
+            <section>
+            <img src="images/samsung.jpg" title="Samsung Galaxy S26 Ultra" rel="external"
+                 width="330" height="238">
+            <h3>Samsung Galaxy S26 Ultra</h3>
+            <p>1 Day ago</p>
+        </section>
+            
+        <section>
+            <img src="images/macbook.jpg" title="MacBook Pro 16' M4" rel="external"
+                 width="330" height="238">
+            <h3><a href="product.html" target="_blank" class="link">MacBook Pro 16" M4</a></h3>
+            <p>5 Days ago</p>
+        </section>
+            
+        <section>
+            <img src="images/watch.jpg" title="Samsung Galaxy Smartwatch" rel="external"
+                 width="330" height="238">
+            <h3>Samsun Galaxy Smartwatch</h3>
+            <p>1 Week ago</p>
+        </section>
+    </div>
+    </article>    
+    </main>
+        
+    <!--SIDEBAR  -->
+    <aside>
+        <section id="emailbox">
+            <img src="images/paper-plane.png" title="Mail Icon" rel="external"
+                 width="50" height="50">
+        <h2><b>Subscribe to our Newsletter</b></h2>
+        <p>Get the latest tech news, reviews, and buying guides delivered to your inbox</p>
+        <input type="email" name="email">
+        </section>
+    </aside>   
+    <!--This sidebar is meant to be seen on every internally linked page allowing users to enter their email adress if preferred for company
+    content notifications anywhere within the website: User Experience-->
+        
+    <!--FOOTER  -->
+    <footer>
+    <ul id="footer">
+        <li><img src="images/directivelogowhite.png" alt="The Directive Logo"
+             width="180" height="61" class="align-left-image"></li>
+        <li>&#169;The Directive</li>
+        <li><a href="docs/privacy-policy.pdf" target="_blank" id="privacydoc">Our Privacy Policy</a></li>
+        <li>Contact Us at: <a href="mailto:thedirective@gmail.com" target="_blank" id="link">thedirective@gmail.com</a></li>
+        <li>Find us at: <br> The Directive Headquarters, 42 Andrew's Lane, Colombo 01</li>
+    </ul>    
+    </footer>
+     <!--Footer contains a sample privacy policy document, the company email adress and adress, including the logo customarily seen in most
+        websites, the organization of elements/hierarchy are intentional to replicate most footers in most webpages-->
+        
+        </body>
+</html>

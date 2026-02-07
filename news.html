@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tech News</title>
+        <link rel="icon" href="images/iconblack.png" type="image/png"
+              sizes="16x16">   
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body>
+    <div id="news">
+        <header>
+        <a href="index.html"><img src="images/directivelogowhite.png" alt="The Directive Logo"
+             width="180" height="61"></a>
+        <h2 class="webpagetitle"><b>The Latest Tech News</b></h2>
+        <p>Stay Updated with the Latest Technology Announcements and Industry News</p>
+        </header>
+    
+        <!--NAVIGATION-->
+        <nav>
+            <ul>
+                <li><span><a href="news.html" title="Tech News"><b>Tech News</b></a></span></li>
+                <li><a href="reviews.html" title="Reviews"><b>Reviews</b></a></li>
+                <li><a href="guide.html" title="Buying Guides"><b>Buying Guides</b></a></li>
+                <li><a href="aboutus.html" title="About us"><b>About Us</b></a></li>
+            </ul>
+        </nav>
+        <!--Span tag is used to mark a specific area of the navigation at a specific time when interacted, in this case showing the
+        webpage the user is in through the navigation bar-->
+        
+        <main class="content">
+        <!--CONTENT AREA 1-->
+        <article id="newsvideo">
+            <section>
+            <h2>What Could the Future of Cars Look like?</h2>
+            <p><b>BBC News</b></p>
+            <p>The future of cars is shaping up to be more than just transportation, it’s becoming an entertainment hub on wheels.
+                At the same time, advanced audio systems will offer personalized music experiences, adapting playlists to your mood, syncing with the rhythm of the road, 
+                and even integrating spatial sound for a concert-like feel. Cars won’t just get you from point A to B, they’ll be interactive spaces where gaming, music, and travel blend seamlessly into one dynamic journey.</p>
+            </section>
+            
+            <section id="iframe">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Lz5moT15ZgI?si=llET2C78g0oQmbyV" title="YouTube video player" 
+            style="border: none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </section>
+            <!--An attached thematic youTube video for variation of content available for the user. The tag style should be written
+            as the default tag "frameborder" is not depracated within the "iframe" tag-->
+        </article>
+            
+        <!--CONTENT AREA 2-->
+        <article>
+            <h2 id="latest"><b>Latest Articles</b></h2>
+            
+            <div class= "container">
+        <section>
+            <img src="images/iphone.jpg" title="New Iphone 18 Pro" rel="external"
+                 width="330" height="238">
+            <h3><a href="article.html" target="_blank" class="link">iPhone 18 Pro: Revolutionary Camera System Released</a></h3>
+            <!--Contains the link directing the user to an example article, when the title is clicked-->
+            <p>1 Hour ago</p>
+        </section>
+            
+        <section>
+            <img src="images/laptop.jpg" title="Dell XPS 15" rel="external"
+                 width="330" height="238">
+            <h3>Dell Announces XPS 15 with 48-Hour Battery Life</h3>
+            <p>2 Days ago</p>
+        </section>
+            
+        <section>
+            <img src="images/sony.jpg" title="Sony WH-2000XM6" rel="external"
+                 width="330" height="238">
+            <h3>Sony WH-2000XM6 Review: The Best Just Got Better</h3>
+            <p>2 Weeks ago</p>
+        </section>
+        </div>
+        </article>       
+        </main>
+        
+    <!--SIDEBAR  -->
+    <aside>
+        <section id="emailbox">
+            <img src="images/paper-plane.png" title="Mail Icon" rel="external"
+                 width="50" height="50">
+        <h2><b>Subscribe to our Newsletter</b></h2>
+        <p>Get the latest tech news, reviews, and buying guides delivered to your inbox</p>
+        <input type="email" id="email" name="email">
+        </section>
+    </aside>   
+        
+    <!--FOOTER  -->
+    <footer>
+    <ul id="footer">
+        <li><img src="images/directivelogowhite.png" alt="The Directive Logo"
+             width="180" height="61" class="align-left-image"></li>
+        <li>&#169;The Directive</li>
+        <li><a href="docs/privacy-policy.pdf" target="_blank" id="privacydoc">Our Privacy Policy</a></li>
+        <li>Contact Us at: <a href="mailto:thedirective@gmail.com" target="_blank" id="link">thedirective@gmail.com</a></li>
+        <li>Find us at: <br> The Directive Headquarters, 42 Andrew's Lane, Colombo 01</li>
+    </ul>    
+    </footer>
+    
+    </div>
+    </body>
+</html>
